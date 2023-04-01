@@ -1,0 +1,103 @@
+@import './reset.scss';
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  src: local('Montserrat'), url('../../assets/fonts/montserrat/Montserrat.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'MGoda';
+  font-weight: normal;
+  font-style: normal;
+  src: local('MGoda'), url('../../assets/fonts/mgoda/MGoda.otf') format('opentype');
+}
+
+
+:root {
+  /* Colors */
+  --color-white: #FFFFFF;
+  --color-neutral90: #ede0db; //font-color
+  --color-neutral60: #998f8b; //font-color-variant
+  --color-neutral20: #362f2c; //background
+  --color-black: #000000;
+
+  --color-orange: #FF6B00; //background-variant
+  --color-orange-variant: #FFAB5E;
+  --color-orange-dark: #8F3D01;
+  --color-blue: #2400FF;
+  --color-gray: #474747;
+
+  /* Fonts styles */
+  --font-family: 'Montserrat', sans-serif;
+  --font-family-variant: 'MGoda', sans-serif;
+
+  --font-display-large: normal normal 400 57px/64px var(--font-family);
+  --font-display-medium: normal normal 400 45px/52px var(--font-family);
+  --font-display-small: normal normal 400 36px/44px var(--font-family);
+
+  --font-headline-large: normal normal 400 32px/40px var(--font-family);
+  --font-headline-medium: normal normal 400 28px/36px var(--font-family);
+  --font-headline-small: normal normal 400 24px/32px var(--font-family);
+
+  --font-title-large: normal normal 400 22px/28px var(--font-family);
+  --font-title-medium: normal normal 500 16px/24px var(--font-family);
+  --font-title-small: normal normal 500 14px/20px var(--font-family);
+
+  --font-body-large: normal normal 400 16px/24px var(--font-family);
+  --font-body-medium: normal normal 400 14px/20px var(--font-family);
+  --font-body-small: normal normal 400 12px/16px var(--font-family);
+
+  --font-label-large: normal normal 500 14px/20px var(--font-family);
+  --font-label-medium: normal normal 500 12px/16px var(--font-family);
+  --font-label-small: normal normal 500 11px/16px var(--font-family);
+
+  /* Divider */
+  --divider: 0.063rem solid var(--color-neutral20);
+
+  /* Effect styles */
+  --elevation-light-1: 0px 1px 2px rgba(0, 0, 0, 0.3),
+    0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+
+  --elevation-light-2: 0px 1px 2px rgba(0, 0, 0, 0.3),
+    0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+
+  --elevation-light-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+    0px 1px 3px rgba(0, 0, 0, 0.3);
+
+  --elevation-light-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15),
+    0px 2px 3px rgba(0, 0, 0, 0.3);
+
+  --elevation-light-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15),
+    0px 4px 4px rgba(0, 0, 0, 0.3);
+
+  --elevation-dark-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15),
+    0px 1px 2px rgba(0, 0, 0, 0.3);
+
+  --elevation-dark-2: 0px 1px 3px 1px rgba(0, 0, 0, 0.15),
+    0px 1px 2px rgba(0, 0, 0, 0.3);
+
+  --elevation-dark-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+    0px 1px 3px rgba(0, 0, 0, 0.3);
+
+  --elevation-dark-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15),
+    0px 2px 3px rgba(0, 0, 0, 0.3);
+
+  --elevation-dark-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15),
+    0px 4px 4px rgba(0, 0, 0, 0.3);
+
+  --layout-breakpoint-large: 1440px;
+  --layout-breakpoint-medium: 1240px;
+  --layout-breakpoint-small: 905px;
+  --layout-breakpoint-extra-small: 600px;
+}
+
+#root {
+  background: repeat-y center/100% url('../../assets/images/patterns/gray_pattern.png'), var(--color-gray);
+  background-blend-mode: luminosity;
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-size: 16px;
+
+}

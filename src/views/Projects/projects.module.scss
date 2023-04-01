@@ -1,0 +1,63 @@
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 105vh;
+  padding: 2rem;
+  padding-left: calc(15% + 2rem);
+  width: 100%;
+
+  .headline {
+    font: var(--font-display-large);
+    font-family: var(--font-family-variant);
+    text-align: center;
+  }
+
+  .list_projects {
+    align-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    .item {
+      border-radius: 3rem;
+      height: calc(35.556vw / 1.7777777777777777777777777777778);
+      margin-top: 2rem;
+      overflow: hidden;
+      width: 35.556vw;
+
+      .link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .image {
+          cursor: pointer;
+          order: -1;
+          width: 100%;
+          transition: order 150ms ease-in-out;
+        }
+
+        .image_hover {
+          cursor: pointer;
+          order: 1;
+          width: 100%;
+          transition: order 150ms ease-in-out;
+        }
+
+        &:hover {
+          .image {
+            order: 1;
+          }
+
+          .image_hover {
+            order: -1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import './media-screen-variants.scss';
